@@ -9,24 +9,29 @@ same directory. It exports all posts into the directory "posts".
 Each post gets exported into a markdown-file fit for import int Jekyll, the static site generator. 
 The files are named "YEAR-MONTH-DAY-NAME.md" and have the usual Jekyll Header:
 
-> ---
-> layout: post
-> title: $NAME
-> author: $AUTHOR
-> ---
-> HERE COMES THE MARKDOWN CONVERTED CONTENT OF THE POST
+<pre>
+---
+layout: post
+title: $NAME
+author: $AUTHOR
+---
+HERE COMES THE MARKDOWN CONVERTED CONTENT OF THE POST
+</pre>
 
 ## Install
 
 Download the script or clone the repo. Then
 
-> gem install nokogiri
-> gem install upmark
+```
+gem install nokogiri
+gem install upmark
+```
 
 and then you can
 
-> ruby wordpressXmlToJekyllMarkdown.rb
-
+```
+ruby wordpressXmlToJekyllMarkdown.rb
+```
 
 
 ## Origin
